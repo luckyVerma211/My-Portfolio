@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#CV">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-text">
+      <p>Coding Enthusiast</p>
+      <h1>Hi, I'm <span>Lucky</span><br>Verma from India</h1>
+    </div>
+  </div>
+
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/About_me.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1><br>
+        <p>I am an enthusiastic and dedicated beginner in the field of programming, driven by a passion for technology and problem-solving. My journey into programming began during my higher secondary education, and since then, I have been actively honing my skills and exploring different facets of software development. I have a solid foundation in Python, C, C++ and am eager to expand my knowledge further. I thrive in collaborative environments where I can contribute my skills while continuously learning from experienced developers.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links active-link" onclick="opentab('projects')">Projects</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents" id="skills">
+          <ul>
+            <li><span>C/C++</span><br>Data Structures</li>
+            <li><span>Web Development</span><br>HTML and CSS</li>
+            <li><span>Python</span><br>Problem Solving</li>
+          </ul>
+        </div>
+        <div class="tab-contents active-tab" id="projects">
+          <ul>
+            <li><span>Restaurant Management</span><br>Using Python(Frontend) and MySql(Backend)</li>
+            <li><span>Amazon Website Clone</span><br>Using HTML and CSS</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2023-2027</span><br>BTech(ECE)- University of Delhi, Delhi</li>
+            <li><span>2023</span><br>Intermediate - Delhi Public School, Gaya</li>
+            <li><span>2021</span><br>Marticulate - Delhi Public School, Gaya</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/Management.jpeg">
+        <div class="layer">
+          <h3>Restaurant Management</h3>
+          <p>A character user interface project designed to take order from the customer and store their data in restaurant's database, which can be accessed by restaurant's manager.</p>
+          <a href="https://github.com/luckyVerma211/Projects/tree/main/Restaurant%20Management"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/Projects.jpg">
+        <div class="layer">
+          <h3>Mini Projects</h3>
+          <p>Several projects designed using Python and C language, just to enhance the programming skill. These includes some popular games, Management project,and use of Graphics user interface.</p>
+          <a href="https://github.com/luckyVerma211/Projects"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/academics.jpg">
+        <div class="layer">
+          <h3>Data Structures</h3>
+          <p>As a Competitive Programmer, Data Structures is the most important topic, which is used for various types of problem Solving. It's a collection of important problems related to DSA.</p>
+          <a href="https://github.com/luckyVerma211/DSA-in-CPP"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-regular fa-envelope-open"></i>  lucky.verma2110@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 6207582659</p>
+        <div class="social-icons">
+          <!--<a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>-->
+          <a href="https://github.com/luckyVerma211"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/lucky_verma211/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/lucky-verma-253a87258/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="resume.pdf" download class="btn btn2" id="CV">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Lucky Verma. Made with Great Stack</p>
+  </div>
+</div>
+
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx4aZ4bkYJ7HC24aYRnAgh3KcSYs6nL6cX5PLBZpPZrgyKZHeIMVEtXdAmiZTrqmZN0Bg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message Sent Successfully!!"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },2000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
